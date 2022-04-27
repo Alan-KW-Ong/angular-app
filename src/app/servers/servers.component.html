@@ -1,5 +1,13 @@
 <h3>This is our servers component!</h3>
 <hr>
+<label>Server Name</label>
+<input 
+    type="text" 
+    class="form-control"
+    (input)="onUpdateServerName($event)"
+>
+<p> {{ serverName }} </p>
+
 <button class="btn btn-toolbar btn-primary"
     [disabled]="!allowNewServer"
     (click)="onCreateServer()">Add Server</button>
@@ -8,4 +16,6 @@
     {{ allowNewServer }}
 </p> -->
 <p> {{ serverCreationStatus }} </p>
+
+
 <app-server></app-server>
