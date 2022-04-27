@@ -1,11 +1,23 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <h3>I'm in the App Component</h3>
-
+      <h3>Create a few components manually and using CLI</h3>
+      <ul>
+        <li>First need to create the component folder, and the file end with ts.</li>
+        <li>Naming convention should be [name].component.ts</li>
+        <li>Then create and export the class, create the component decorator, and then import from angular core </li>
+        <li>Assign the selector, template or templateUrl, and styles</li>
+        <li>Selector will be the component name, templateUrl will be the html file location or can do it inline in template</li>
+        <li>StylesUrl or Styles would be the same as template just that it wrap in bracket</li>
+        <li>If using CLI to generate the component it'll handle the app.module.ts for importing the newly added components</li>
+        <li>If manually created, we need to import it on app.module.ts</li>
+      </ul>
       <hr />
 
-      <app-servers></app-servers>
+      <app-info-alert></app-info-alert>
+      <app-success-alert></app-success-alert>
+      <app-warning-alert></app-warning-alert>
+
     </div>
   </div>
 </div>
