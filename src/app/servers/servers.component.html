@@ -1,17 +1,17 @@
 <h3>This is our servers component!</h3>
 <hr>
 <label>Server Name</label>
-<input 
+<!-- <input 
     type="text" 
     class="form-control"
     (input)="onUpdateServerName($event)"
->
+> -->
 <input 
     type="text" 
     class="form-control"
     [(ngModel)]="serverName"
 >
-<p> {{ serverName }} </p>
+<!-- <p> {{ serverName }} </p> -->
 
 <button class="btn btn-toolbar btn-primary"
     [disabled]="!allowNewServer"
