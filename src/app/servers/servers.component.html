@@ -1,5 +1,11 @@
 <h3>This is our servers component!</h3>
 <hr>
 <button class="btn btn-toolbar btn-primary"
-    [disabled]="!allowNewServer">Add Server</button>
+    [disabled]="!allowNewServer"
+    (click)="onCreateServer()">Add Server</button>
+<!-- <p [innerText]="allowNewServer"></p>
+<p>
+    {{ allowNewServer }}
+</p> -->
+<p> {{ serverCreationStatus }} </p>
 <app-server></app-server>
