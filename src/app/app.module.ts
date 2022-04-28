@@ -10,6 +10,7 @@ import { ParagraphComponent } from './paragraph/paragraph.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { InfoAlertComponent } from './info-alert/info-alert.component';
+import { Ass1Component } from './ass1/ass1.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { InfoAlertComponent } from './info-alert/info-alert.component';
     ParagraphComponent,
     SuccessAlertComponent,
     WarningAlertComponent,
-    InfoAlertComponent
+    InfoAlertComponent,
+    Ass1Component
   ],
   imports: [
     BrowserModule,
