@@ -10,7 +10,7 @@ export class ServersComponent implements OnInit {
   serverCreationStatus = "No server was created.";
   serverName = "Test Server Name";
   serverCreated = false;
-  servers = ['Testserver', 'Testserver 2'];
+  servers = ['Testserver', 'Testserver 2', 'Testserver 3'];
 
   constructor() {
     // function () {}

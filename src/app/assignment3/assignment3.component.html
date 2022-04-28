@@ -1,0 +1,23 @@
+<h3>Assignment 3</h3>
+<ol>
+    <li>Add a button which says 'Display Details'</li>
+    <li>Add a paragraph with any content of your choice (eg. 'Secret Password = tuna')</li>
+    <li>Toggle the displaying of that paragraph with the button created in the first step</li>
+    <li>Log all button clicks in an array and output that array below the secret paragraph (maybe log a timestamp or simply an incrementing number)</li>
+    <li>Starting the 5th log item, give all future log items a bluie background (via ngStyle) and white color (ngClass) </li>
+</ol>
+
+<button
+    (click)="toggleDisplay()"
+    class="btn btn-primary">Display Details</button>
+<p *ngIf="isDisplay; else noDisplay">Click to reveal the secret.</p>
+<ng-template #noDisplay>
+    <p>Secret Password = Tuna</p>
+</ng-template>
+<!-- <app-info-alert *ngFor="let log of logArray"></app-info-alert> -->
+<p
+    [ngStyle] = "{backgroundColor: getColor()}" 
+    [ngClass] = "{six: counter >= 5, default: counter < 6}" 
+    *ngFor="let log of logArray">
+    {{ log }}
+</p>
