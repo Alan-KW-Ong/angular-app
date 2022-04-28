@@ -1,0 +1,18 @@
+<p>assignment3-solution works!</p>
+<button
+    (click)="toggleDisplay()"
+    class="btn btn-primary">Display Details</button>
+<div *ngIf="showSecret">Secret = Tuna Fish</div>
+<!-- <p 
+    *ngFor="let log of logs"
+    [ngStyle]="{backgroundColor: log > 4 ? 'blue' : 'transparent'}"
+    [ngClass]="{'white-text': log > 4}"
+    
+>{{ log }}</p> -->
+
+<p 
+    *ngFor="let log of logs; let i = index"
+    [ngStyle]="{backgroundColor: i > 3 ? 'blue' : 'transparent'}"
+    [ngClass]="{'white-text': i > 3}"
+    
+>{{ log }}</p>
