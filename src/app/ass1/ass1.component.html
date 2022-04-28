@@ -9,12 +9,18 @@
     class="form-control"
     [(ngModel)]="userName"    
 >
-
-<p> {{ userName }} </p>
+<p><b>User Name:</b> {{ userName }} </p>
 
 <button 
     (click)="onReset()"
     [disabled]="!userName.length"
     class="btn btn-primary"
 > Reset </button>
-  
+<hr>
+<label>conditional checking directly on the data-bind expression</label>
+<hr>
+<button 
+    (click)="onReset()"
+    [disabled]="userName === ''"
+    class="btn btn-primary"
+> Reset </button>
